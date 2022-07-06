@@ -1,0 +1,39 @@
+{
+    "extends": [
+        "airbnb",
+        "plugin:prettier/recommended",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:jsx-a11y/recommended",
+        "plugin:@next/next/recommended"
+    ],
+    "plugins": ["prettier", "react"],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2020
+    },
+    "rules": {
+        "prettier/prettier": ["error"],
+        "react-hooks/exhaustive-deps": "warn",
+        "react-hooks/rules-of-hooks": "error",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "react/jsx-indent-props": [2, 4],
+        "react/jsx-indent": [2, 4],
+        "react/jsx-one-expression-per-line": [0],
+        "react/prefer-stateless-function": [1],
+        "react/static-property-placement": [1, "property assignment"],
+        "react/prop-types": "warn",
+        "import/no-named-as-default-member": "warn",
+        "import/no-named-as-default": "warn",
+        "jsx-a11y/anchor-is-valid": "warn",
+        "no-case-declarations": "warn",
+        "no-use-before-define": "warn",
+        "consistent-return": "warn",
+        "react/no-children-prop": "warn",
+        "no-restricted-syntax": "warn",
+        "react/no-array-index-key": "warn",
+        "react/jsx-props-no-spreading": "warn"
+    }
+}

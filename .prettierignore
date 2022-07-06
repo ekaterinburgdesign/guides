@@ -1,0 +1,9 @@
+build
+coverage
+node_modules
+.github
+.vscode
+.next
+package.json
+package-lock.json
+next.config.js

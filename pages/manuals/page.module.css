@@ -1,0 +1,14 @@
+.footNav {
+    display: flex;
+    margin-left: 0;
+    justify-content: space-between;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    row-gap: 1rem;
+}
+
+@media screen and (min-width: 991px) {
+    .footNav {
+        margin-left: max(20%, 376px);
+    }
+}

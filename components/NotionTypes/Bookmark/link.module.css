@@ -1,0 +1,13 @@
+.link {
+    display: inline;
+    color: rgb(0, 0, 0) !important;
+    text-decoration: none !important;
+    border: none !important;
+    transition: all;
+    transition-duration: 0.2s;
+    box-shadow: 0 3px 0 0 #c2c2c2;
+}
+
+.link:hover {
+    color: rgb(89, 89, 89) !important;
+}

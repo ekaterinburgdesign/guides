@@ -1,0 +1,47 @@
+.manualItem {
+    background: white;
+    overflow: visible;
+    width: 90vw;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+    margin: 0;
+    box-shadow: rgb(17 12 46 / 10%) 0px 15px 25px -5px;
+    border-radius: 0.5em;
+    aspect-ratio: 16 / 10;
+    margin-bottom: 1em;
+    transition: 0.2s;
+}
+
+.manualItem:focus-visible {
+    outline-width: 0;
+}
+
+.manualItem img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 16 / 10;
+}
+
+.manualItem span {
+    overflow: visible !important; /*Саша, прости!*/
+}
+
+.manualItem:hover img,
+.manualItem:focus-visible img {
+    transform: matrix(1, -0.08, 0, 1, 0, 0) scaleX(0.95);
+}
+
+@media screen and (min-width: 991px) {
+    .manualItem {
+        width: calc(100% / 3 - 2vw);
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    .manualItem {
+        box-shadow: rgba(255, 255, 255, 0.3) 0px 3px 8px;
+    }
+}

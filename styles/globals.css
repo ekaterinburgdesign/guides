@@ -1,0 +1,47 @@
+@import 'normalize.css';
+@import './font.css';
+@import '../node_modules/bootstrap/dist/css/bootstrap-grid.min.css';
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Iset Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+        Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    scroll-behavior: smooth;
+    font-weight: 300;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media screen and (prefers-color-scheme: light) {
+    html,
+    body {
+        background-color: rgb(255, 255, 255);
+        color: #000000;
+    }
+
+    ::selection {
+        background: #ffc800;
+        color: black;
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    html,
+    body {
+        color: white;
+        background-color: black;
+    }
+
+    ::selection {
+        background: #ffc800;
+        color: black;
+    }
+}

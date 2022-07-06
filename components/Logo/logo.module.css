@@ -1,0 +1,41 @@
+.logoContainer {
+    background-color: transparent;
+    box-shadow: none;
+    position: relative;
+    display: flex;
+    column-gap: 1em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: black;
+    text-decoration: none;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+
+.logoContainer:hover,
+.logoContainer:focus-visible {
+    box-shadow: none;
+    background-color: #ffffff;
+    color: #112233;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.logoText {
+    font-weight: 500;
+}
+
+.logoImage {
+    padding-left: calc(0.65em + 7.5px);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    .logoContainer {
+        color: white;
+    }
+
+    .logoContainer:hover,
+    .logoContainer:focus-visible {
+        background-color: #404040;
+        color: white;
+    }
+}
